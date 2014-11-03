@@ -32,4 +32,8 @@ describe PokerDice::Hand do
     expect(PokerDice::Die::FACES).to include(hand.dice[3])
   end
 
+  specify "creates a hash of cards and their count" do
+    expect(hand.matches?.class).to eq Hash
+  end
+
 end

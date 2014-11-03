@@ -1,5 +1,4 @@
 module PokerDice
-
   class Die
     FACES = %w[ 9 T J Q K A ]
     # FACES.collect! { |k, v| }
@@ -32,7 +31,23 @@ module PokerDice
     end
 
     def matches?
-
+      count = 0
+      card_hash = {}
+      for card in @dice
+        count = @dice.count {|x| x == card }
+        # if count > 1
+          card_hash[card] = count
+        # end
+      end
+      puts card_hash
+      card_hash
     end
+
+    def hands(hash)
+      for item in hash
+
+      end
+    end
+
   end
 end
