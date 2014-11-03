@@ -1,4 +1,5 @@
 module PokerDice
+
   class Die
     FACES = %w[ 9 T J Q K A ]
     # FACES.collect! { |k, v| }
